@@ -6,11 +6,11 @@
 /*   By: mfagri <mfagri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 04:30:33 by mfagri            #+#    #+#             */
-/*   Updated: 2022/05/23 13:42:50 by mfagri           ###   ########.fr       */
+/*   Updated: 2022/05/24 19:36:33 by mfagri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+
 void	ft_putstr_fd(char *s, int fd)
 {
 	int i;
@@ -78,11 +78,11 @@ void ft_pwd()
 	return ;
 }
 
-void ft_cd(char **pr)
+void ft_cd(char **arg,char **env)
 {
 	int i;
 	
-	i = chdir(pr[1]);
+	i = chdir(arg[1]);
 	printf("%d\n",i);
 }
 void ft_print_env(char **env)
@@ -92,8 +92,11 @@ void ft_print_env(char **env)
 	i = 0;
 	while(env[i])
 	{
+		if(strchr(env[i],'='))
+		{
 		ft_putstr_fd(env[i],1);
 		write(1,"\n",1);
+		}
 		i++;
 	}
 	return ;
@@ -138,35 +141,35 @@ int ft_do_nothing(char *arg)
 	}
 	return 0;
 }
-void	add_env_str(char *arg,char **env)
-{
-	int i;
-	int n;
-//	char *f;
-//	int l;
+// void	add_env_str(char *arg,char **env)
+// {
+// 	int i;
+// 	int n;
+// //	char *f;
+// //	int l;
 
-//	l = ft_strlen(arg);
-//	f = malloc(sizeof(char)*l+1);
-//	i = -1;
-////	while(arg[++i])
-//		f[i] = arg[i];
-////	f[i] = '\0';
-	i = 0;
-	while(env[i])
-	{
-		if(!ft_strncmp(env[i],arg,ft_strlen(arg)))
-			n = 1;
-		i++;
-	}
-	if (n == 1)
-		return;
-	else if (n != 1)
-	{
-		env[i] = cpy (env[i], arg);
-	}
-	env[i+1] = NULL;
-	return ;
-}
+// //	l = ft_strlen(arg);
+// //	f = malloc(sizeof(char)*l+1);
+// //	i = -1;
+// ////	while(arg[++i])
+// //		f[i] = arg[i];
+// ////	f[i] = '\0';
+// 	i = 0;
+// 	while(env[i])
+// 	{
+// 		if(!ft_strncmp(env[i],arg,ft_strlen(arg)))
+// 			n = 1;
+// 		i++;
+// 	}
+// 	if (n == 1)
+// 		return;
+// 	else if (n != 1)
+// 	{
+// 		env[i] = cpy (env[i], arg);
+// 	}
+// 	env[i+1] = NULL;
+// 	return ;
+// }
 void	add_new(char *arg,char **env)
 {
 	int i;
@@ -376,4 +379,48 @@ void	ft_export(char **env,char **arg)
 		while(arg[i])
 			check_arg_export(arg[i++],env);
 	return;
+}
+void remove_from_env(char *arg,char **env)
+{
+	int i;
+	int j;
+	int l;
+	
+	l = 0;
+	i = 0;
+	j = 0;
+	if(!(ft_isalpha(arg[0])) && arg[0] != '_' && strchr(arg,'=') && strchr(arg,'+'))
+	{
+		ft_putstr_fd("minishell: ", 2);
+		ft_putstr_fd("unset: `", 2);
+		ft_putstr_fd(arg, 2);
+		ft_putstr_fd("': not a valid identifier\n", 2);
+		return ;
+	}
+	i = 0;
+	while(env[i])
+	{
+		j = i + 1;
+		if(!ft_strncmp(env[i], arg, ft_strlen(arg)))
+		{
+			free (env[i]);
+			l = 1;
+			while(env[j])
+			{
+				env[i] = env[j];
+				j++;
+				i++;
+			}
+		}
+		i++;
+	}
+	if(l)
+		env[i-1] = NULL;
+}
+void ft_unset(char **arg,char **env)
+{
+	int i;
+	i = 0;
+	while (arg[++i])
+		remove_from_env(arg[i],env);
 }

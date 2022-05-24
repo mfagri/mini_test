@@ -1,0 +1,19 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/mfagri/Desktop/mini_test'
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/minishell.o  -c mandatory/minishell.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_split.o  -c mandatory/utils/ft_split.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_strncmp.o  -c mandatory/utils/ft_strncmp.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/get_next_line_utils.o  -c mandatory/utils/get_next_line_utils.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/get_next_line.o  -c mandatory/utils/get_next_line.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_strlen.o  -c mandatory/utils/ft_strlen.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_strjoin.o  -c mandatory/utils/ft_strjoin.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/utils_1.o  -c mandatory/utils/utils_1.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_strlcpy.o  -c mandatory/utils/ft_strlcpy.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_isdigit.o  -c mandatory/utils/ft_isdigit.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_isalnum.o  -c mandatory/utils/ft_isalnum.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/utils/ft_itoa.o  -c mandatory/utils/ft_itoa.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/handler.o  -c mandatory/handler.c
+cc  -I /Users/mfagri/.brew/opt/readline/include -o mandatory/builtins.o  -c mandatory/builtins.c
+cc  ./mandatory/minishell.o ./mandatory/utils/ft_split.o ./mandatory/utils/ft_strncmp.o ./mandatory/utils/get_next_line_utils.o ./mandatory/utils/get_next_line.o ./mandatory/utils/ft_strlen.o ./mandatory/utils/ft_strjoin.o ./mandatory/utils/utils_1.o ./mandatory/utils/ft_strlcpy.o ./mandatory/utils/ft_isdigit.o ./mandatory/utils/ft_isalnum.o ./mandatory/utils/ft_itoa.o ./mandatory/handler.o ./mandatory/builtins.o -I /Users/mfagri/.brew/opt/readline/include -o minishell  -lreadline -L /Users/mfagri/.brew/opt/readline/lib -lncurses
+make: Leaving directory `/Users/mfagri/Desktop/mini_test'
+ 

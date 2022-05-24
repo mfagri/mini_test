@@ -1,0 +1,607 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Tue May 24 19:36:12 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 18)
+OBJ = ./mandatory/obj
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/mfagri/Desktop/mini_test
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+P9K_SSH = 0
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000ccsr00336f/T/vscode-ipc-958fb2d8-7297-4b95-a010-5d7e273b4fc1.sock
+# environment
+VSCODE_CWD = /
+# environment
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.eT7Tssu8za/Render
+# environment
+PATH = /Users/mfagri/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/mfagri/goinfre/devtools/Android/sdk/tools/bin:/Users/mfagri/goinfre/devtools/Android/sdk/emulator:/Users/mfagri/goinfre/devtools/flutter/bin:/Users/mfagri/goinfre/devtools/gradle/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/mfagri/goinfre/devtools/jdk/Contents/Home/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 17)
+AR = ar rcs
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 27)
+LIB = ./mandatory/minishell.h 
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.JwUhoVaeYO/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+HOMEBREW_TEMP = /tmp/mfagri/Homebrew/Temp
+# makefile (from `Makefile', line 25)
+FILE1 = $(FILE:.c=.o)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/mfagri/Desktop/mini_test
+# makefile (from `Makefile', line 20)
+FILE = ./mandatory/minishell.c ./mandatory/utils/ft_split.c ./mandatory/utils/ft_strncmp.c ./mandatory/utils/get_next_line_utils.c ./mandatory/utils/get_next_line.c ./mandatory/utils/ft_strlen.c ./mandatory/utils/ft_strjoin.c ./mandatory/utils/utils_1.c ./mandatory/utils/ft_strlcpy.c ./mandatory/utils/ft_isdigit.c ./mandatory/utils/ft_isalnum.c ./mandatory/utils/ft_itoa.c ./mandatory/handler.c ./mandatory/builtins.c
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/mfagri
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/mfagri/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LOGNAME = mfagri
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/mfagri/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+GRADLE_USER_HOME = /Users/mfagri/goinfre/devtools/gradle
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+HOMEBREW_CACHE = /tmp/mfagri/Homebrew/Caches
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 14)
+CC = cc 
+# environment
+DEV_TOOLS = /Users/mfagri/goinfre/devtools
+# environment
+JAVA_HOME = /Users/mfagri/goinfre/devtools/jdk/Contents/Home
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = mfagri
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 13)
+NAME = minishell
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from `Makefile', line 16)
+LFLAGS = -I /Users/mfagri/.brew/opt/readline/include
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000ccsr00336f/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/mfagri/Library/Application Support/Code/1.67.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000003.Electron
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x18CCE:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+APPS = /Users/mfagri/goinfre/apps
+# environment
+PAGER = less
+# environment
+ANDROID_SDK_ROOT = /Users/mfagri/goinfre/devtools/Android/sdk
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a8
+# automatic
+^F = $(notdir $^)
+# environment
+GRADLE_OPTS = -Dgradle.user.home=/Users/mfagri/goinfre/devtools/gradle
+# default
+SUFFIXES := 
+# environment
+JAVA_17_HOME = /Users/mfagri/goinfre/devtools/jdk/Contents/Home
+# makefile (from `Makefile', line 15)
+FLAGS = -Wall -Wextra -Werror 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 1331
+# variable set hash-table stats:
+# Load=86/1024=8%, Rehash=0, Collisions=5/119=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777227, inode 1833752): 8 files, no impossibilities.
+# mandatory/utils (device 16777227, inode 1833832): 24 files, no impossibilities so far.
+# mandatory (device 16777227, inode 1833814): 9 files, no impossibilities so far.
+
+# 41 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+all: minishell
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+# Not a target:
+mandatory/utils/ft_strlcpy.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/utils/ft_strncmp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/utils/ft_isalnum.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+mandatory/utils/ft_itoa.o: mandatory/utils/ft_itoa.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_itoa'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+mandatory/utils/ft_strlen.o: mandatory/utils/ft_strlen.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_strlen'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+mandatory/utils/ft_isdigit.o: mandatory/utils/ft_isdigit.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_isdigit'
+#  Last modified 2022-05-23 13:43:01
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:10:11
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/utils/get_next_line.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+mandatory/utils/ft_strjoin.o: mandatory/utils/ft_strjoin.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_strjoin'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+mandatory/utils/ft_split.o: mandatory/utils/ft_split.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_split'
+#  Last modified 2022-05-23 13:43:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+minishell: mandatory/minishell.o mandatory/utils/ft_split.o mandatory/utils/ft_strncmp.o mandatory/utils/get_next_line_utils.o mandatory/utils/get_next_line.o mandatory/utils/ft_strlen.o mandatory/utils/ft_strjoin.o mandatory/utils/utils_1.o mandatory/utils/ft_strlcpy.o mandatory/utils/ft_isdigit.o mandatory/utils/ft_isalnum.o mandatory/utils/ft_itoa.o mandatory/handler.o mandatory/builtins.o mandatory/minishell.h
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  commands to execute (from `Makefile', line 32):
+	@$(CC) $(FILE1) $(LFLAGS) -o $@  -lreadline -L /Users/mfagri/.brew/opt/readline/lib -lncurses
+	
+
+fclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 41):
+	@rm -f $(NAME) $(NAME_BONUS)
+	
+
+mandatory/builtins.o: mandatory/builtins.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/builtins'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := mandatory/builtins.o
+# automatic
+# % := 
+# automatic
+# * := mandatory/builtins
+# automatic
+# + := mandatory/builtins.c
+# automatic
+# | := 
+# automatic
+# < := mandatory/builtins.c
+# automatic
+# ^ := mandatory/builtins.c
+# automatic
+# ? := mandatory/builtins.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+mandatory/minishell.o: mandatory/minishell.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/minishell'
+#  Last modified 2022-05-23 13:43:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+# Not a target:
+mandatory/utils/ft_itoa.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 13:23:19
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/utils/ft_strlen.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/utils/ft_isdigit.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mandatory/handler.o: mandatory/handler.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/handler'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+mandatory/utils/get_next_line_utils.o: mandatory/utils/get_next_line_utils.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/get_next_line_utils'
+#  Last modified 2022-05-23 13:43:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+mandatory/utils/utils_1.o: mandatory/utils/utils_1.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/utils_1'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+re: fclean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 38):
+	@rm -f $(FILE1) $(FILE1_BONUS)
+	
+
+# Not a target:
+mandatory/utils/ft_strjoin.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/utils/ft_split.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+mandatory/utils/ft_strlcpy.o: mandatory/utils/ft_strlcpy.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_strlcpy'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+mandatory/utils/ft_strncmp.o: mandatory/utils/ft_strncmp.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_strncmp'
+#  Last modified 2022-05-23 13:43:00
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+# Not a target:
+mandatory/builtins.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-23 13:42:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+mandatory/utils/ft_isalnum.o: mandatory/utils/ft_isalnum.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/ft_isalnum'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+# Not a target:
+mandatory/minishell.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-05-21 20:05:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/handler.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+mandatory/utils/get_next_line_utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:07:02
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+mandatory/utils/get_next_line.o: mandatory/utils/get_next_line.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `mandatory/utils/get_next_line'
+#  Last modified 2022-05-23 13:43:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 35):
+	@$(CC) $(LFLAGS) -o $@  -c $^
+	
+
+# Not a target:
+mandatory/minishell.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mandatory/utils/utils_1.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-19 14:09:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=37/1024=4%, Rehash=0, Collisions=0/111=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue May 24 19:36:12 2022
+
+ 
