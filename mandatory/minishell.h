@@ -43,8 +43,10 @@ int get_glo(int i);
 void get_tt(void);
 int ft_echo(char **pr);
 void ft_pwd();
-void ft_cd(char **pr);
+void ft_cd(char **arg,char **env);
 void ft_print_env(char **env);
-char **ft_export(char **env,char **arg);
-
+void	ft_export(char **env,char **arg);
+void ft_unset(char **arg,char **env);
+int	ft_isalpha(int c);
+void	ft_putstr_fd(char *s, int fd);
 #endif
